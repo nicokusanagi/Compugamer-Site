@@ -277,14 +277,14 @@ margin-right: -980px;
 }
 
 .botoes button {
-width: 50px;
-height: 50px;
-background-color: transparent;
-border: none;
-cursor: pointer;
-margin-top: 500px;
-margin-bottom: -100px; 
-padding: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 485px;
+    margin-bottom: -135px;
+    padding: 0;
 }
 
 .botoes button img {
