@@ -247,24 +247,40 @@ color: white;
 margin-top: 125px;
 font-size: 25px;
 margin-bottom: 30px;
+text-align: left;
+width: 400px;
+position: relative;
+margin-left: 150px;
 }
 
 .preco_produto {
 color: white;
 font-size: 22px;
 margin-bottom: 30px;
+text-align: left;
+width: 400px;
+position: relative;
+margin-left: 150px;
 }
 
 .estoque_produto {
 color: white;
 font-size: 22px;
 margin-bottom: 30px;
+text-align: left;
+width: 400px;
+position: relative;
+margin-left: 150px;
 }
 
 .descricao_produto {
 color: white;
 font-size: 22px;
 margin-bottom: 30px;
+text-align: left;
+width: 400px;
+position: relative;
+margin-left: 150px;
 }
 
 .botoes {
