@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use app\Controllers\ProdController;
+use app\http\Controllers\ProductsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,5 +13,10 @@ use app\Controllers\ProdController;
 |
 */
 
-Route::get('/login', [ProdController::class, 'login']);
-Route::get('/adicionar', [ProdController::class, 'adicionar']);
+Route::get('/', [ProductsController::class, 'index']);
+Route::get('/adicionar', [ProductsController::class, 'adicionar']);
+Route::get('/fone', [ProductsController::class, 'fone']);
+Route::get('/mouse', [ProductsController::class, 'mouse']);
+Route::get('/login', [ProductsController::class, 'login']);
+Route::get('/teclado', [ProductsController::class, 'teclado']);
+Route::get('/gabin', [ProductsController::class, 'gabin']);
