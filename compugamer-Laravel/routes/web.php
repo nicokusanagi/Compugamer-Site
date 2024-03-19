@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use app\http\Controllers\ProductsController;
+use App\Http\Controllers\ProductsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +14,10 @@ use app\http\Controllers\ProductsController;
 |
 */
 
-Route::get('/', [ProductsController::class, 'index']);
-Route::get('/adicionar', [ProductsController::class, 'adicionar']);
-Route::get('/fone', [ProductsController::class, 'fone']);
-Route::get('/mouse', [ProductsController::class, 'mouse']);
-Route::get('/login', [ProductsController::class, 'login']);
-Route::get('/teclado', [ProductsController::class, 'teclado']);
-Route::get('/gabin', [ProductsController::class, 'gabin']);
+Route::get('/', [ProductsController::class, 'index'])->name('index');
+Route::get('/adicionar', [ProductsController::class, 'adicionar'])->name('adicionar');
+Route::get('/fone', [ProductsController::class, 'fone'])->name('fone');
+Route::get('/mouse', [ProductsController::class, 'mouse'])->name('mouse');
+Route::get('/login', [ProductsController::class, 'login'])->name('login');
+Route::get('/teclado', [ProductsController::class, 'teclado'])->name('teclado');
+Route::get('/gabin', [ProductsController::class, 'gabin'])->name('gabin');

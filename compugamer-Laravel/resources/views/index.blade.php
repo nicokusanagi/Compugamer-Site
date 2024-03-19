@@ -16,7 +16,7 @@
             <div class="logo">
                 <img src="/img/logo.png" alt="logo do site" width="202" height="119"/>
             <div class="login">
-                 <li><a href="#">Login</a></li>
+                 <li><a href="{{ route('login') }}">Login</a></li>
             </div>
 
 
@@ -26,8 +26,8 @@
         <main>
         <div class="header-2">
             <div class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Adicionar Produto</a></li>
+                <li><a href="{{ route('index') }}">Inicio</a></li>
+                <li><a href="{{ route('adicionar') }}">Adicionar Produto</a></li>
             </div>
             <div class="Busca">
                 <input placeholder="Buscar" type="text"/>
@@ -37,20 +37,21 @@
     <main>
 <div class="catalogo">
      <div class="Mouse">
-     <li><a href="#">Mouse RGB 1600DPi<br>R$9999</a></li>
+     <li><a href="{{ route('mouse') }}">Mouse RGB 1600DPi<br>R$9999</a></li>
      <img src="/img/mouse.png" alt="mouse gamer" width="250" height="250"/>
 
      </div>
 
      <div class="Teclado">
-        <li><a href="#">Teclado Semi-Mecânico RGB<br>R$9999</a></li>
+        <li><a href="{{ route('teclado') }}">Teclado Semi-Mecânico RGB<br>R$9999</a></li>
         <img src="/img/teclado.png" alt="teclado gamer" width="250" height="250"/>
         </div>
         <div class="Fone">
-            <li><a href="#">Fone RGB Surround 7.1<br>R$9999</a></li>
-        <img src="/img/fone.png" alt="fone gamer" width="250" height="250"/></div>
+            <li><a href="{{ route('fone') }}">Fone RGB Surround 7.1<br>R$9999</a></li>
+        <img src="/img/fone.png" alt="fone gamer" width="250" height="250"/>
+    </div>
         <div class="gabinete">
-            <li><a href="#">Gabinete ATX RGB<br>R$9999</a></li>
+            <li><a href="{{ route('gabin') }}">Gabinete ATX RGB<br>R$9999</a></li>
             <img src="/img/gabin.png" alt="gabinete gamer" width="250" height="250"/>
         </div>
 
