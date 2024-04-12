@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\products;
 use Illuminate\Http\Request;
 
-class ProductsController extends Controller
+class PCController extends Controller
 {
     public function index(){
-        return view ('index');
+        $products = Products::all();
+        return view ('index', compact('products'));
     }
     public function adicionar(){
         return view ('adicionar');

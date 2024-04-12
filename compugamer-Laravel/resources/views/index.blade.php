@@ -7,6 +7,7 @@
 
 
     </head>
+
     <body>
         <main>
 
@@ -33,27 +34,12 @@
                 <input placeholder="Buscar" type="text"/>
             </div>
         </div>
+        @if($products->All( ))
+        <table class="w-full">
+            @endif
 </main>
     <main>
-<div class="catalogo">
-     <div class="Mouse">
-     <li><a href="{{ route('mouse') }}">Mouse RGB 1600DPi<br>R$9999</a></li>
-     <img src="/img/mouse.png" alt="mouse gamer" width="250" height="250"/>
-
-     </div>
-
-     <div class="Teclado">
-        <li><a href="{{ route('teclado') }}">Teclado Semi-Mecânico RGB<br>R$9999</a></li>
-        <img src="/img/teclado.png" alt="teclado gamer" width="250" height="250"/>
-        </div>
-        <div class="Fone">
-            <li><a href="{{ route('fone') }}">Fone RGB Surround 7.1<br>R$9999</a></li>
-        <img src="/img/fone.png" alt="fone gamer" width="250" height="250"/>
-    </div>
-        <div class="gabinete">
-            <li><a href="{{ route('gabin') }}">Gabinete ATX RGB<br>R$9999</a></li>
-            <img src="/img/gabin.png" alt="gabinete gamer" width="250" height="250"/>
-        </div>
+    </main>
 
 </div>
 
